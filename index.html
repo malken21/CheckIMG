@@ -14,7 +14,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body onload="load_list();">
   <header>
     <div>
       <input class="search" type=”text” name=”name” placeholder="検索">
@@ -23,22 +23,6 @@
   <div class="none"></div>
   <div class="list" id="list">
 
-    <article class="item">
-
-      <h3 class="title" id="name_0">商品名</h3>
-
-      <h4 class="price">
-        値段: <a id="price_0">10</a>円
-      </h4>
-      <div class="image">
-        <img src="img/error.png" alt="icon" />
-      </div>
-      <div class="button">
-        <button type="button" onclick="addItem(0);" class=" add">追加</button>
-        <span class="count">個数: <a id="count_0">0</a></span>
-        <button type="button" onclick="rmvItem(0);" class="rmv">削除</button>
-      </div>
-    </article>
 
   </div>
 </body>
