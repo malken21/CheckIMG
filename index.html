@@ -15,23 +15,28 @@
 </head>
 
 <body>
-  <header>~</header>
+  <header>
+    <div>
+      <input class="search" type=”text” name=”name” placeholder="検索">
+    </div>
+  </header>
   <div class="none"></div>
   <div class="list" id="list">
 
     <article class="item" onclick="addItem(0);">
 
-      <h3 class="title" id="name_0"> うまい棒 コーンポタージュ味</h3>
+      <h3 class="title" id="name_0">うまい棒 コーンポタージュ味</h3>
 
-      <h4>
-        値段:
-
-        <a id="price_0"> 10</a>
-
-        円
+      <h4 class="price">
+        値段: <a id="price_0">10</a>円
       </h4>
-      <div>
+      <div class="image">
         <img src="img/error.png" alt="icon" />
+      </div>
+      <div class="button">
+        <button class="add">追加</button>
+        <span class="count">個数: <a>0</a></span>
+        <button class="rmv">削除</button>
       </div>
     </article>
 
