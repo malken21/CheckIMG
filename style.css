@@ -1,0 +1,49 @@
+.item img {
+    width: 256px;
+    height: 192px;
+}
+
+.item {
+    background-color: #555;
+    width: 256px;
+    border-radius: 20px;
+    padding: 10px 20px 10px;
+    margin: 10px;
+}
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: #2f2f2f;
+    color: #eee;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item div {
+    text-align: center;
+}
+
+.item div img {
+    border-radius: 10px;
+}
+
+.item h3 {
+    margin-block-start: 0em;
+    margin-block-end: 10px;
+    display: inline;
+    font-weight: normal;
+}
+
+.item h4 {
+    margin-block-start: 0em;
+    margin-block-end: 10px;
+    font-weight: normal;
+    color: #ccc;
+}
+
+.score {
+    font-size: 1.7rem;
+    text-align: center;
+    padding-left: 30%;
+    height: 0px;
+}
