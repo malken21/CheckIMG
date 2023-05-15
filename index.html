@@ -23,7 +23,7 @@
   <div class="none"></div>
   <div class="list" id="list">
 
-    <article class="item" onclick="addItem(0);">
+    <article class="item">
 
       <h3 class="title" id="name_0">うまい棒 コーンポタージュ味</h3>
 
@@ -34,9 +34,9 @@
         <img src="img/error.png" alt="icon" />
       </div>
       <div class="button">
-        <button class="add">追加</button>
-        <span class="count">個数: <a>0</a></span>
-        <button class="rmv">削除</button>
+        <button type="button" onclick="addItem(0);" class=" add">追加</button>
+        <span class="count">個数: <a id="count_0">0</a></span>
+        <button type="button" onclick="rmvItem(0);" class="rmv">削除</button>
       </div>
     </article>
 

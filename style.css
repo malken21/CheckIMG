@@ -95,41 +95,24 @@ header {
     font-size: larger;
     margin: 0% 3%;
     padding: 0% 5%;
-    background-color: #30a50d;
+    color: #000;
+    background-color: #3CC911;
     text-align: center;
     border-radius: 20px;
     transition: background-color 0.4s;
 }
-.add:hover {
-    background-color: #18480a;
-}
-.add:active {
-    background-color: #30a50d;
-}
-
 .rmv {
     cursor: pointer;
     font-size: larger;
     margin: 0% 3%;
     padding: 0% 5%;
+    color: #fff;
     background-color: #C10417;
     text-align: center;
     border-radius: 20px;
     transition: background-color 0.4s;
 }
-.rmv:hover {
-    transition: background-color 0.1s;
-    background-color: #860311;
-}
-.rmv:active {
-    transition: background-color 0.1s;
-    background-color: #C10417;
-}
 
 .count {
     width: 10%;
-}
-
-.button {
-    margin-bottom: 3px;
 }
