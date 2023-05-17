@@ -25,13 +25,13 @@ function CreateListItem(id, price, name, image) {
   return list_base;
 }
 
-// 変数"CommodityData" の内容
-// { "商品名": { "price": 金額, "image": "商品の画像" } }
-const CommodityData = { "商品名": { "price": 1, "image": "商品の画像" } };
-
 // HTML (Body) がロードされたら実行される
 async function load_list() {
   console.log("load");
+
+  // 変数"CommodityData" の内容
+  // { "商品名": { "price": 金額, "image": "商品の画像" } }
+  const CommodityData = { "商品名": { "price": 1, "image": "商品の画像" } };
 
   let list = "";
   Object.keys(CommodityData).forEach((name, id) => {
