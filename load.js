@@ -3,18 +3,19 @@
 async function load_list() {
   console.log("load");
 
-  // 変数"CommodityData" の内容
-  // { "商品名": { "price": 金額, "image": "商品の画像" } }
+  // 変数"CommodityData" 商品のデータ
+  // { "name": "商品名", "price": 金額, "image": "商品の画像" }
   const CommodityData = await get(CommodityData_URL);
+
+  // 検証用
+  //const CommodityData = [{ "name": "商品名 No.1", "price": 10, "image": "商品の画像-1.png" }, { "name": "商品名 No.2", "price": 20, "image": "商品の画像-2.png" }];
 
   console.log(CommodityData);
 
   let list = "";
-  Object.keys(CommodityData).forEach((name, id) => {
-    const commodity = CommodityData[name];
-
+  CommodityData.forEach((commodity, id) => {
     // CreateListItem(固有ID,金額,商品名,画像);
-    list += CreateListItem(id, commodity.price, name, commodity.image);
+    list += CreateListItem(id, commodity.price, commodity.name, commodity.image);
   });
   document.getElementById(`list`).innerHTML = list;
 }
