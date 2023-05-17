@@ -5,7 +5,9 @@ async function load_list() {
 
   // 変数"CommodityData" の内容
   // { "商品名": { "price": 金額, "image": "商品の画像" } }
-  const CommodityData = get(CommodityData_URL);
+  const CommodityData = await get(CommodityData_URL);
+
+  console.log(CommodityData);
 
   let list = "";
   Object.keys(CommodityData).forEach((name, id) => {
