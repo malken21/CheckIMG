@@ -1,6 +1,6 @@
 
 // 購入したデータ (個数など) の情報
-let data = {};
+let BuyData = {};
 
 // 個数 追加 関数
 function addItem(id, value) {
@@ -18,9 +18,9 @@ function addItem(id, value) {
     count_element.innerText = count;
 
     // 購入したデータを更新
-    data[id] = { "name": name, "price": price, "count": count };
+    BuyData[id] = { "name": name, "price": price, "count": count };
     // ログに購入したデータを表示
-    console.log(data);
+    console.log(BuyData);
 
     // 購入した商品の合計金額が 変数"money" に代入される
     const money = money_result();
@@ -32,8 +32,8 @@ function addItem(id, value) {
 function money_result() {
     // 合計金額
     let money = 0;
-    Object.keys(data).forEach(key => {
-        const item = data[key];
+    Object.keys(BuyData).forEach(key => {
+        const item = BuyData[key];
         money += item.price * item.count;
     });
     return money;
