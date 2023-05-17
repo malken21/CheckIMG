@@ -7,7 +7,7 @@
     background-color: #1bcc04;
     text-align: center;
     border-radius: 20px;
-    transition: background-color 0.4s;
+    transition: background-color 0.2s;
     border-width: 0px;
 }
 
@@ -25,7 +25,7 @@
     background-color: #cc0418;
     text-align: center;
     border-radius: 20px;
-    transition: background-color 0.4s;
+    transition: background-color 0.2s;
     border-width: 0px;
 }
 
