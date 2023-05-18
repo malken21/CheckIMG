@@ -12,12 +12,12 @@ async function load_list() {
 
   console.log(CommodityData);
 
-  let list = "";
   CommodityData.forEach((commodity, id) => {
-    // CreateListItem(固有ID,金額,商品名,画像);
-    list += CreateListItem(id, commodity.price, commodity.name, commodity.image);
+    document.getElementById(`list`).insertAdjacentHTML("beforeend",
+      // CreateListItem(固有ID,金額,商品名,画像);
+      CreateListItem(id, commodity.price, commodity.name, commodity.image)
+    );
   });
-  document.getElementById(`list`).innerHTML = list;
 }
 
 // Get リクエストで jsonが送られてくる
