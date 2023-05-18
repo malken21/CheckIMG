@@ -38,3 +38,16 @@ function money_result() {
     });
     return money;
 }
+
+function resetCount() {
+    if (CommodityData) {
+        document.getElementById(`list`).innerText = "";
+        CreateList(CommodityData);
+        BuyData = {};
+
+        // 購入した商品の合計金額が 変数"money" に代入される
+        const money = money_result();
+
+        document.getElementById("result").innerText = money;
+    }
+}

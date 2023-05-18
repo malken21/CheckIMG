@@ -29,8 +29,15 @@
       <input class="search" type=”text” name=”name” oninput="searchTextChange(this.value);" placeholder="検索">
     </span>
     <span class="total">
-      合計金額: <a id="result">0</a>円
+      合計金額:
+      <br>
+      <a id="result">0</a>円
     </span>
+    <div>
+      <button class="reset" type="button" onclick="resetCount();">
+        個数リセット
+      </button>
+    </div>
   </header>
   <div id="list">
   </div>
