@@ -26,16 +26,16 @@
 <body onload="load_list();">
   <header>
     <span>
-      <input class="search" type=”text” name=”name” oninput="searchTextChange(this.value);" placeholder="検索">
+      <input id="search" type=”text” name=”name” oninput="searchTextChange(this.value);" placeholder="検索">
     </span>
-    <span class="total">
+    <span id="total">
       合計金額:
       <br>
       <a id="result">0</a>円
     </span>
     <div>
-      <button class="reset" type="button" onclick="resetCount();">
-        個数リセット
+      <button id="reset" type="button" onclick="reset();">
+        リセット
       </button>
     </div>
   </header>

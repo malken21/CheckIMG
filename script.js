@@ -39,7 +39,7 @@ function money_result() {
     return money;
 }
 
-function resetCount() {
+function reset() {
     if (CommodityData) {
         document.getElementById(`list`).innerText = "";
         CreateList(CommodityData);
@@ -49,5 +49,6 @@ function resetCount() {
         const money = money_result();
 
         document.getElementById("result").innerText = money;
+        document.getElementById("search").value = "";
     }
 }

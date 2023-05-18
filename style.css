@@ -26,20 +26,20 @@ header {
     background-color: #454545;
 }
 
-.search {
+#search {
     vertical-align: middle;
     font-size: medium;
     margin: 10px;
 }
 
-.total {
+#total {
     float: right;
     font-size: larger;
     margin: 10px;
     text-align: right;
 }
 
-.reset {
+#reset {
     font-size: small;
     margin: 0px 10px 10px;
     transition: background-color 0.2s;
