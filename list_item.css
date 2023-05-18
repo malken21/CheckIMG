@@ -38,7 +38,7 @@
     width: 10%;
 }
 
-.item div img {
+.image img {
     width: 256px;
     height: 192px;
     object-fit: cover;
@@ -67,19 +67,16 @@
     text-align: center;
 }
 
-.item h3 {
+.title {
     margin-block-start: 0em;
     margin-block-end: 10px;
     display: inline;
     font-weight: normal;
 }
 
-.item h4 {
+.price {
+    color: #ccc;
     margin-block-start: 0em;
     margin-block-end: 10px;
     font-weight: normal;
-}
-
-.price {
-    color: #ccc;
 }
