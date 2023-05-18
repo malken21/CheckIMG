@@ -22,17 +22,19 @@ html {
 header {
     height: 10vh;
     width: 100%;
-    position: fixed;
     top: 0px;
     z-index: 100;
     background-color: #454545;
 }
 
-.none {
-    height: 10vh;
-}
-
 .search {
     vertical-align: middle;
+    font-size: medium;
+    margin: 10px;
+}
 
+.total {
+    float: right;
+    font-size: larger;
+    margin: 10px;
 }
