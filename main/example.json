@@ -8,5 +8,10 @@
         "name": "商品名 No.2",
         "price": 20,
         "image": "商品の画像-2.png"
+    },
+    {
+        "name": "商品名 No.3",
+        "price": 50,
+        "image": "./img/example.png"
     }
 ]
