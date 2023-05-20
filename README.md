@@ -15,3 +15,7 @@ Google Apps Script のコード
 金額を計算するコード
 
 /main/config.js "CommodityData_URL" に商品データが送られてくるURLを指定する。
+
+Pythonをインストールした状態で /main/start.bat (Linuxの場合は start.sh) を実行すると、
+
+<http://localhost/> でサーバーが起動します。
