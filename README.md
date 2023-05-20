@@ -8,6 +8,8 @@
 
 Google Apps Script のコード
 
+/GAS/config.js にスプレッドシートのURLなどを記入する。
+
 ### /main
 
 金額を計算するコード
