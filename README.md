@@ -14,4 +14,4 @@ Google Apps Script のコード
 
 /main/config.js
 
-に商品データがあるURLを指定する。
+の"CommodityData_URL"に商品データが送られてくるURLを指定する。
