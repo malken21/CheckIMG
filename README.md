@@ -12,6 +12,4 @@ Google Apps Script のコード
 
 金額を計算するコード
 
-/main/config.js
-
-の"CommodityData_URL"に商品データが送られてくるURLを指定する。
+/main/config.js "CommodityData_URL" に商品データが送られてくるURLを指定する。
