@@ -13,7 +13,7 @@ Google Apps Script のコード
 商品のデータが送られてくるURLは
 
 ```
-"WebアプリのURL"type=getCommodityData
+"WebアプリのURL"?type=getCommodityData
 ```
 
 ### /main
