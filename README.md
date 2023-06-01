@@ -10,6 +10,12 @@ Google Apps Script のコード
 
 /GAS/config.js にスプレッドシートのURLなどを記入する。
 
+商品のデータが送られてくるURLは
+
+```
+"WebアプリのURL"type=getCommodityData
+```
+
 ### /main
 
 金額を計算するコード
