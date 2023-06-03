@@ -47,16 +47,19 @@ function CreateList(CommodityData) {
 // 商品の画像はbase64でも指定可能
 function CreateListItem(id, price, name, image) {
     const list_base = `
-  <article class="item">
-    <h3 class="title" id="name_${id}">${name}</h3>
-    <h4 class="price">値段: <a id="price_${id}">${price}</a>円</h4>
-    <div class="image"><img src=${image} onerror="this.src='img/error.png'" alt="icon" /></div>
-    <div class="button">
-      <button type="button" onclick="addItem(${id},1);" class=" add">追加</button>
-      <span class="count">個数: <a id="count_${id}">0</a></span>
-      <button type="button" onclick="addItem(${id},-1);" class="rmv">削除</button>
-    </div>
-  </article>
+    <article class="item">
+      <h3 id="name_${id}">${name}</h3>
+      <h4>
+        <span>値段: <a id="price_${id}">${price}</a>円</span>
+        <span class="count">個数: <a id="count_${id}">0</a></span>
+      </h4>
+      <div class="image"><img src=${image} onerror="this.src='img/error.png'" alt="icon" /></div>
+      <div class="buttons">
+        <button type="button" onclick="addCount(${id},1);" class=" add">追加</button>
+        <button class="value" onclick="changeValue(${id})" id="value_${id}">${ChangeValueList[0]}</button>
+        <button type="button" onclick="rmvCount(${id},-1);" class="rmv">削除</button>
+      </div>
+    </article>
   `;
 
     return list_base;

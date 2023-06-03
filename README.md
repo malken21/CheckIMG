@@ -12,7 +12,7 @@ Google Apps Script のコード
 
 商品のデータが送られてくるURLは
 
-```
+```url
 "WebアプリのURL"?type=getCommodityData
 ```
 
@@ -25,3 +25,9 @@ Google Apps Script のコード
 Pythonをインストールした状態で /main/start.bat (Linuxの場合は start.sh) を実行すると、
 
 <http://localhost/> でサーバーが起動します。
+
+### 設定ファイル
+
+GAS の設定ファイルは /GAS/config.js
+
+メイン(ウェブアプリ) の設定ファイルは /main/config.js

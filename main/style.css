@@ -7,6 +7,13 @@ body {
 }
 
 
+
+button {
+    /* ボタンにするとfont-family の設定が解除されてしまうので*/
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+
 #list {
     display: flex;
     justify-content: center;
