@@ -12,14 +12,17 @@ function addItem(id, value) {
 
     const name = document.getElementById(`name_${id}`).innerText;
     const price = document.getElementById(`price_${id}`).innerText;
-    let count_element = document.getElementById(`count_${id}`);
+    const count_element = document.getElementById(`count_${id}`);
 
     // 個数が 1024 以上 ならないようにする処理
-    // 個数が 0より 小さくならないようにする処理
     // 上限を 1024 にしたのは 開発者の気分です。 本当は上限無くてもいい
-    const count = parseInt(count_element.innerText) + value;
-    if (count >= 1024 || count < 0) return;
+    let count = parseInt(count_element.innerText) + value;
+    if (count >= 1024) return;
 
+    // 個数が 0より 小さくならないようにする処理
+    if (count < 0) count = 0
+
+    // 表示されている個数を更新
     count_element.innerText = count;
 
     // 購入したデータを更新
