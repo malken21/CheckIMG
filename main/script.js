@@ -1,5 +1,5 @@
 
-// 購入したデータ (個数など) の情報
+// 購入した商品と個数 の情報
 let BuyData = {};
 
 // 数値変更ボタン の情報
@@ -49,7 +49,11 @@ function reset() {
     if (CommodityData) {
         document.getElementById(`list`).innerText = "";
         CreateList(CommodityData);
+
+        // 購入した商品と個数 の情報 リセット
         BuyData = {};
+        // 数値変更ボタン の情報 リセット
+        ValueButtonData = {};
 
         // 購入した商品の合計金額が 変数"money" に代入される
         const money = money_result();
