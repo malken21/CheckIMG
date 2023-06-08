@@ -103,5 +103,6 @@
 
 .buttons {
     /* 文字をコピーできないようにする (誤操作を なるべく少なくする) */
+    -webkit-user-select: none;
     user-select: none;
 }
