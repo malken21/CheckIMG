@@ -1,4 +1,3 @@
-self.addEventListener('install', () => {
-    //インストールログ
-    console.log("install!!")
-});
+self.addEventListener('install', () => { });
+self.addEventListener('activate', () => { });
+self.addEventListener('fetch', () => { });
