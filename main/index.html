@@ -5,42 +5,54 @@
 <!-- https://github.com/malken21/CheckIMG -->
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="list_item.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <script src="script.js"></script>
-  <script src="load.js"></script>
-  <script src="config.js"></script>
-  <script src="search.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="list_item.css">
 
-  <title>会計IMG</title>
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    <script src="load.js"></script>
+    <script src="config.js"></script>
+    <script src="search.js"></script>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <!-- タイトル -->
+    <title>会計IMG</title>
+
+    <!-- アイコン -->
+    <link rel="icon" href="favicon.ico">
+
+    <!-- フォント -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+
+    <!-- PWA -->
+    <link rel="manifest" href="manifest.json" />
+
 </head>
 
-<body DOMContentLoaded="load_list();">
-  <header>
-    <span>
-      <input id="search" type=”text” name=”name” oninput="searchTextChange(this.value);" placeholder="検索">
-    </span>
-    <span id="total">
-      合計金額:
-      <br>
-      <a id="result">0</a>円
-    </span>
-    <div>
-      <button id="reset" type="button" onclick="reset();">
-        リセット
-      </button>
+<body>
+    <header>
+        <span>
+            <input id="search" type=”text” name=”name” oninput="searchTextChange(this.value);" placeholder="検索">
+        </span>
+        <span id="total">
+            合計金額:
+            <br>
+            <a id="result">0</a>円
+        </span>
+        <div>
+            <button id="reset" type="button" onclick="reset();">
+                リセット
+            </button>
+        </div>
+    </header>
+    <div id="list">
     </div>
-  </header>
-  <div id="list">
-  </div>
 </body>
 
 </html>

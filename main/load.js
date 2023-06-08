@@ -1,15 +1,16 @@
 
 let CommodityData;
 
-// HTML (Body) がロードされたら実行される
-async function load_list() {
+// HTML が解析されたら実行される
+window.addEventListener("DOMContentLoaded", async () => {
     console.log("load");
 
     // 変数"CommodityData" 商品のデータ
     // { "name": "商品名", "price": 金額, "image": "商品の画像" }
     CommodityData = await get(CommodityData_URL);
     CreateList(CommodityData);
-}
+});
+
 
 // Get リクエストで jsonが送られてくる
 function get(url) {
