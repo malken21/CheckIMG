@@ -65,3 +65,6 @@ function CreateListItem(id, price, name, image) {
 
     return list_base;
 }
+
+// サービスワーカー 登録
+if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js');
