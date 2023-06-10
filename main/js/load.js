@@ -67,4 +67,4 @@ function CreateListItem(id, price, name, image) {
 }
 
 // サービスワーカー 登録
-if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js');
+if ('serviceWorker' in navigator) navigator.serviceWorker.register('js/sw.js');
